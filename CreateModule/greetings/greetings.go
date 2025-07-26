@@ -1,9 +1,9 @@
 package greetings
 
 import (
-    "errors"
-    "fmt"
-    "math/rand"
+	"errors"
+	"fmt"
+	"math/rand"
 )
 
 // Hello returns a greeting for the named person.
@@ -14,6 +14,7 @@ func Hello(name string) (string, error) {
     }
     // Create a message using a random format.
     message := fmt.Sprintf(randomFormat(), name)
+    // message := fmt.Sprint(randomFormat())    
     return message, nil
 }
 
